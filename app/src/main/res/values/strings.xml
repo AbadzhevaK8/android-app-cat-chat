@@ -5,4 +5,5 @@
     <string name="inbox">Inbox</string>
     <string name="help">Help</string>
     <string name="help_menu">Help</string>
+    <string name="sent_items">Sent Items</string>
 </resources>
