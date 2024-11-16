@@ -34,6 +34,8 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         val builder = AppBarConfiguration.Builder(navController.graph)
         val appBarConfiguration = builder.build()
         binding.toolbar.setupWithNavController(navController, appBarConfiguration)
+        val bottomNavView = binding.bottomNav
+        bottomNavView.setupWithNavController(navController)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
