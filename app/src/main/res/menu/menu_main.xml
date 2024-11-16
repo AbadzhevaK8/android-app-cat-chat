@@ -2,14 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/inboxFragment"
-        android:icon="@android:drawable/ic_dialog_email"
+        android:icon="@drawable/baseline_email_24"
         android:title="@string/inbox" />
     <item
         android:id="@+id/sentItemsFragment"
-        android:icon="@android:drawable/ic_menu_send"
+        android:icon="@drawable/baseline_send_24"
         android:title="@string/sent_items" />
     <item
         android:id="@+id/helpFragment"
-        android:icon="@android:drawable/ic_menu_help"
+        android:icon="@drawable/baseline_help_24"
         android:title="@string/help" />
 </menu>
