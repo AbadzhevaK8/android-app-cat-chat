@@ -10,7 +10,7 @@
         android:icon="@drawable/baseline_send_24"
         android:title="@string/sent_items" />
     </group>
-    <item android:title="Support">
+    <item android:title="@string/support">
         <menu>
             <group android:checkableBehavior="single">
     <item
