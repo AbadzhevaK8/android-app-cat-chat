@@ -8,4 +8,6 @@
     <string name="sent_items">Sent Items</string>
     <string name="support">Support</string>
     <string name="a_little_kitten">A little kitten.</string>
+    <string name="avatar">avatar</string>
+    <string name="pic">pic</string>
 </resources>
