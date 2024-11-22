@@ -20,14 +20,26 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // Set up the Toolbar
         setSupportActionBar(binding.toolbar)
+        // Get the NavController
         val navHostFragment =
             supportFragmentManager
                 .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
-        val builder = AppBarConfiguration.Builder(navHostFragment.navController.graph)
-        builder.setOpenableLayout(binding.drawerLayout)
-        binding.toolbar.setupWithNavController(navHostFragment.navController, builder.build())
-        NavigationUI.setupWithNavController(binding.navView, navHostFragment.navController)
+        val navController = navHostFragment.navController
+
+        // Configure AppBar with DrawerLayout
+        val appBarConfiguration =
+            AppBarConfiguration
+                .Builder(navController.graph)
+                .setOpenableLayout(binding.drawerLayout)
+                .build()
+
+        // Link Toolbar with NavController
+        binding.toolbar.setupWithNavController(navController, appBarConfiguration)
+
+        // Set up NavigationView
+        NavigationUI.setupWithNavController(binding.navView, navController)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
